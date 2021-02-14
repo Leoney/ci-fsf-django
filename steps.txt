@@ -6,3 +6,8 @@ settings.py contains the global settings for our entire Django project.
 
 python3 manage.py runserver 
 python3 manage.py startapp todo
+
+python3 manage.py makemigrations --dry-run
+python3 manage.py showmigrations
+python3 manage.py migrate --plan
+ 
