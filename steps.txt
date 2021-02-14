@@ -5,4 +5,4 @@ django-admin startproject django_todo .
 settings.py contains the global settings for our entire Django project.
 
 python3 manage.py runserver 
-
+python3 manage.py startapp todo
