@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Add a Todo Item:</h1>
+        <form method="POST" action="add">
+            <div>
+                <p>
+                    <label for="id_name">Name:</label>
+                    <input type="text" name="item_name" id="id_name">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="id_done">Done:</label>
+                    <input type="checkbox" name="done" id="id_done">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <button type="submit">Add Item</button>
+                </p>
+            </div>
+        </form>
+
+        <a href="add"> Add an item</a>
+    </body>
+</html>
