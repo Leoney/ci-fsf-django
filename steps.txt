@@ -22,6 +22,15 @@ coverage html
 python3 -m http.server
  
 heroku login
+heroku login -i
 pip3 install psycopg2-binary
 python3 -m pip install gunicorn
 python3 -m pip freeze --local > requirements.txt
+
+heroku apps:create django-todo-app-2021 --region eu
+heroku apps
+heroku addons
+
+pip3 install dj_database_url
+
+heroku config /* Gives database URL
