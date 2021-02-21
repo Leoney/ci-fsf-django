@@ -21,3 +21,7 @@ coverage report
 coverage html
 python3 -m http.server
  
+heroku login
+pip3 install psycopg2-binary
+python3 -m pip install gunicorn
+python3 -m pip freeze --local > requirements.txt
