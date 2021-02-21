@@ -12,4 +12,12 @@ python3 manage.py showmigrations
 python3 manage.py migrate --plan
 
 python3 manage.py test
+python3 manage.py test todo.test_forms
+python3 manage.py test todo.test_forms.TestItemForm
+
+pip3 install coverage
+coverage run --source=todo manage.py test
+coverage report 
+coverage html
+python3 -m http.server
  
